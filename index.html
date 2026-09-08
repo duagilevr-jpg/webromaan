@@ -114,13 +114,14 @@
     background:rgba(255,255,255,0.98); backdrop-filter:blur(10px);
     opacity:0; visibility:hidden; pointer-events:none;
     transition:opacity .35s ease;
-    display:flex; flex-direction:column; justify-content:center;
+    display:flex; flex-direction:column; justify-content:flex-start;
+    padding-top:clamp(24px,6vh,56px);
   }
   .mobile-nav.is-open{opacity:1; visibility:visible; pointer-events:auto;}
   .mobile-nav-links{display:flex; flex-direction:column; padding:0 clamp(20px,6vw,80px);}
-  .mobile-nav-links a{padding:16px 0; font-size:1.4rem; font-weight:500; color:var(--ink); border-top:1px solid var(--line);}
+  .mobile-nav-links a{padding:14px 0; font-size:1.3rem; font-weight:500; color:var(--ink); border-top:1px solid var(--line);}
   .mobile-nav-links a:last-child{border-bottom:1px solid var(--line);}
-  .mobile-nav .btn{margin:24px clamp(20px,6vw,80px) 0;}
+  .mobile-nav .btn{margin:20px clamp(20px,6vw,80px) 0;}
   @media (min-width:860px){ .mobile-nav{display:none;} }
 
   /* ---------- hero (full bleed) ---------- */
@@ -515,9 +516,9 @@
           <div class="desc">Допомагаю бізнесам рости завдяки сайту</div>
         </div>
         <div class="about-stat-card">
-          <div class="num">0₴</div>
-          <div class="label">Консультація</div>
-          <div class="desc">Безкоштовно, щоб зрозуміти, чи потрібен вам сайт</div>
+          <div class="num">99%</div>
+          <div class="label">Клієнтів задоволені</div>
+          <div class="desc">Співпрацею та результатами</div>
         </div>
         <div class="about-stat-card about-stat-photo">
           <img src="about-photo.jpg" alt="Роман" class="about-photo-img">
@@ -601,19 +602,19 @@
       </div>
       <div class="cases-grid reveal" id="casesGrid">
         <article class="case-card">
-          <div class="case-media"><img src="vela.jpg" alt="Vela" loading="lazy"></div>
+          <div class="case-media"><img src="eea.jpg" alt="European Education Academy" loading="lazy"></div>
           <div class="case-body">
-            <span class="eyebrow">Клініка довголіття</span>
-            <h3>Vela</h3>
-            <p>Лендінг для клініки довголіття з акцентом на довіру і запис на первинну оцінку стану здоров'я.</p>
+            <span class="eyebrow">Освітні консультації</span>
+            <h3>European Education Academy</h3>
+            <p>Сайт освітньої агенції з інформацією про вступ до університетів Австрії.</p>
           </div>
         </article>
         <article class="case-card">
-          <div class="case-media"><img src="greenhire.jpg" alt="GreenHire" loading="lazy"></div>
+          <div class="case-media"><img src="verd.jpg" alt="Verd" loading="lazy"></div>
           <div class="case-body">
-            <span class="eyebrow">HR та рекрутинг</span>
-            <h3>GreenHire</h3>
-            <p>Корпоративний сайт рекрутингової компанії з розділами послуг, вакансій і кейсів.</p>
+            <span class="eyebrow">Нерухомість</span>
+            <h3>Verd</h3>
+            <p>Сайт-презентація для комплексу вілл в Малазі з акцентом на атмосферу і локацію.</p>
           </div>
         </article>
         <article class="case-card">
@@ -625,19 +626,19 @@
           </div>
         </article>
         <article class="case-card is-extra">
-          <div class="case-media"><img src="verd.jpg" alt="Verd" loading="lazy"></div>
+          <div class="case-media"><img src="vela.jpg" alt="Vela" loading="lazy"></div>
           <div class="case-body">
-            <span class="eyebrow">Нерухомість</span>
-            <h3>Verd</h3>
-            <p>Сайт-презентація для комплексу вілл в Малазі з акцентом на атмосферу і локацію.</p>
+            <span class="eyebrow">Клініка довголіття</span>
+            <h3>Vela</h3>
+            <p>Лендінг для клініки довголіття з акцентом на довіру і запис на первинну оцінку стану здоров'я.</p>
           </div>
         </article>
         <article class="case-card is-extra">
-          <div class="case-media"><img src="eea.jpg" alt="European Education Academy" loading="lazy"></div>
+          <div class="case-media"><img src="greenhire.jpg" alt="GreenHire" loading="lazy"></div>
           <div class="case-body">
-            <span class="eyebrow">Освітні консультації</span>
-            <h3>European Education Academy</h3>
-            <p>Сайт освітньої агенції з інформацією про вступ до університетів Австрії.</p>
+            <span class="eyebrow">HR та рекрутинг</span>
+            <h3>GreenHire</h3>
+            <p>Корпоративний сайт рекрутингової компанії з розділами послуг, вакансій і кейсів.</p>
           </div>
         </article>
         <article class="case-card is-extra">
@@ -756,42 +757,50 @@
         <div class="faq-item">
           <button type="button" class="faq-q">
             <span class="faq-num">( 01 )</span>
-            <span class="faq-text">Консультація дійсно безкоштовна?</span>
+            <span class="faq-text">Скільки часу займає розробка сайту?</span>
             <span class="faq-toggle"></span>
           </button>
-          <div class="faq-a"><div class="faq-a-inner">Так. Жодних прихованих умов і жодного обов'язкового замовлення після розмови.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Точний термін залежить від формату та обсягу проєкту. У середньому лендинг займає близько 2 тижнів, корпоративний сайт 4-6 тижнів, а інтернет-магазин на готовому шаблоні близько 2 тижнів. Якщо магазин розробляється з кастомним дизайном та функціоналом, це може зайняти 1-2 місяці. Усі терміни орієнтовні, точніший дедлайн зможу назвати після обговорення вашого проєкту.</div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-q">
             <span class="faq-num">( 02 )</span>
-            <span class="faq-text">У мене немає готових фото чи текстів, це проблема?</span>
+            <span class="faq-text">Що потрібно від мене, щоб розпочати роботу?</span>
             <span class="faq-toggle"></span>
           </button>
-          <div class="faq-a"><div class="faq-a-inner">Ні, обговоримо на консультації, що саме потрібно і як це найпростіше зібрати.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">На старті достатньо розповісти про ваш бізнес, цілі сайту та побажання щодо результату. Я допоможу зі структурою та підкажу, який контент потрібен. Якщо у вас немає готових текстів чи фотографій, це не проблема. Я можу допомогти з написанням текстів, а за потреби створити відповідні зображення за допомогою AI, якщо такий формат підходить для вашої ніші.</div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-q">
             <span class="faq-num">( 03 )</span>
-            <span class="faq-text">Скільки часу займає розробка сайту?</span>
+            <span class="faq-text">А якщо я не знаю, який сайт мені потрібен?</span>
             <span class="faq-toggle"></span>
           </button>
-          <div class="faq-a"><div class="faq-a-inner">Залежить від обсягу, зазвичай від [X] до [X] тижнів. Точні терміни озвучу одразу після консультації.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Це абсолютно нормально. Спочатку ми розберемося з вашою ціллю, аудиторією та завданнями бізнесу. Після цього я запропоную оптимальний формат сайту, структуру та необхідний функціонал.</div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-q">
             <span class="faq-num">( 04 )</span>
-            <span class="faq-text">Чому не можна просто дізнатись ціну одразу?</span>
+            <span class="faq-text">Чи зможу я самостійно редагувати сайт після запуску?</span>
             <span class="faq-toggle"></span>
           </button>
-          <div class="faq-a"><div class="faq-a-inner">Бо ціна залежить від задачі, а не від шаблону. Консультація займає 20-30 хвилин і одразу дає чітку картину вартості.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Так. Після завершення роботи я покажу, як користуватися сайтом та самостійно змінювати основний контент. Якщо ж вам зручніше делегувати оновлення, ви завжди можете звернутися до мене. Я оціню обсяг роботи та повідомлю вартість необхідних змін.</div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-q">
             <span class="faq-num">( 05 )</span>
-            <span class="faq-text">У мене вже є Instagram, навіщо мені ще й сайт?</span>
+            <span class="faq-text">Як відбувається оплата?</span>
             <span class="faq-toggle"></span>
           </button>
-          <div class="faq-a"><div class="faq-a-inner">Instagram добре продає емоцію, але не масштабується як інструмент. Сайт бере на себе заявки, довіру і автоматизацію, поки ви не сидите цілодобово в директі.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Я працюю офіційно як ФОП, а оплату за проєкт розділяємо на 3 частини протягом роботи. Такий формат дозволяє комфортно розподілити витрати та не вносити всю суму одразу.</div></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-q">
+            <span class="faq-num">( 06 )</span>
+            <span class="faq-text">Чи є підтримка після запуску сайту?</span>
+            <span class="faq-toggle"></span>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Так, після запуску ви можете розраховувати на мою підтримку. Тривалість підтримки залежить від обраного тарифу. Якщо після завершення періоду підтримки виникнуть питання або знадобляться додаткові зміни, ви завжди можете звернутися до мене, і ми окремо обговоримо подальшу роботу.</div></div>
         </div>
       </div>
     </div>
@@ -825,9 +834,9 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <a href="#">Публічна оферта</a>
+      <a href="oferta.html">Публічна оферта</a>
       <a href="#" id="backToTop">Нагору ↑</a>
-      <span>© 2026 web.romaan</span>
+      <span>©webromaan</span>
     </div>
   </div>
 </footer>
