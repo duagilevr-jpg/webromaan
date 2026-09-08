@@ -1252,7 +1252,7 @@
 
   // lead form -> sends to a Cloudflare Worker proxy, no bot token ever exposed here.
   // Дивись telegram-worker.js: там реальний токен, він живе на сервері Cloudflare, не тут.
-  const WORKER_URL = 'https://web-romaan-leads.duagilevr.workers.dev/';
+  const WORKER_URL = 'https://web-romaan-leads.duagilevr.workers.dev';
 
   document.addEventListener('submit', async (e) => {
     const form = e.target.closest('[data-lead-form]');
