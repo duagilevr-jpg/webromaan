@@ -166,8 +166,8 @@
   @media (max-width:700px){ .hero-corners{animation:none;} }
 
   /* ---------- lead form ---------- */
-  .lead-form{margin-top:52px;}
-  .lead-form-fields{display:grid; grid-template-columns:repeat(auto-fit, minmax(160px, 1fr)); gap:14px;}
+  .lead-form{margin-top:24px;}
+  .lead-form-fields{max-width:280px; margin:0 auto;}
   .field{display:flex; flex-direction:column; gap:6px;}
   .field label{font-size:0.76rem; font-weight:500; color:var(--ink-faint);}
   .field input{
@@ -181,7 +181,7 @@
   .lead-form-actions .btn{padding:15px 26px; font-size:0.98rem;}
 
   .form-block{text-align:center;}
-  .form-block form{max-width:480px; margin:0 auto; text-align:left;}
+  .form-block form{max-width:480px; margin-left:auto; margin-right:auto; text-align:left;}
   .form-block .lead-form-actions{display:flex; justify-content:center;}
 
   .final-cta .lead-form{max-width:480px; margin:24px auto 0; text-align:left;}
@@ -261,7 +261,7 @@
   .service-row:last-child{border-bottom:1px solid var(--line);}
   .service-index{font-size:0.95rem; font-weight:500; color:var(--ink-faint);}
   .service-body h3{font-size:1.05rem; font-weight:500;}
-  .service-body p{margin-top:6px; font-size:0.92rem; color:var(--ink-soft); max-width:52ch;}
+  .service-body p{margin-top:6px; font-size:0.92rem; color:var(--ink-soft); max-width:78ch;}
   .service-more{
     background:transparent; border:1.5px solid var(--line); border-radius:8px; padding:10px 16px;
     font-size:0.85rem; font-weight:500; color:var(--ink); cursor:pointer; white-space:nowrap;
@@ -339,7 +339,7 @@
   }
   .modal-form-box h3{font-size:1.2rem; font-weight:500; text-transform:uppercase;}
   .modal-form-box p{margin-top:8px; font-size:0.92rem; color:var(--ink-soft);}
-  .modal-form-box form{margin-top:22px;}
+  .modal-form-box form{margin-top:24px;}
 
   /* ---------- FAQ full width ---------- */
   .faq-header{display:flex; align-items:flex-start; justify-content:space-between; gap:20px; flex-wrap:wrap; margin-bottom:clamp(28px,4vw,44px);}
@@ -366,9 +366,9 @@
   /* ---------- final cta ---------- */
   .final-cta{background:var(--accent); border-radius:24px; padding:clamp(40px, 6vw, 68px) clamp(20px, 5vw, 56px); text-align:center;}
   .final-cta .eyebrow{color:var(--ink); background:rgba(20,22,27,0.08);}
-  .final-cta h2{margin-top:14px; font-size:clamp(1.7rem, 3vw + 0.6rem, 2.7rem); font-weight:500; color:var(--ink); letter-spacing:-0.02em; margin-left:auto; margin-right:auto; line-height:1.2; text-transform:uppercase;}
+  .final-cta h2{margin-top:14px; font-size:clamp(1.7rem, 3vw + 0.6rem, 2.7rem); font-weight:500; color:#fff; letter-spacing:-0.02em; margin-left:auto; margin-right:auto; line-height:1.2; text-transform:uppercase;}
   @media (max-width:480px){ .final-cta h2{font-size:1.28rem; letter-spacing:-0.01em;} }
-  .final-cta p{margin-top:14px; color:#3a2213; font-size:1rem;}
+  .final-cta p{margin-top:14px; color:rgba(255,255,255,0.92); font-size:1rem;}
 
   /* ---------- footer (dark) ---------- */
   .site-footer{background:var(--ink); color:rgba(255,255,255,0.72); padding:clamp(56px,7vw,88px) 0 28px;}
@@ -491,7 +491,6 @@
         <div class="hero-center-wrap">
           <div class="hero-center-text hero-anim">
             <h1>Роблю сайти, які допомагають<br>бізнесам отримувати <em>більше заявок</em></h1>
-            <p class="hero-full-sub">Розробляю сайти для бізнесу, який уже продає в Instagram та хоче приймати більше заявок і замовлень онлайн.</p>
             <a class="btn btn-primary" href="#lead-form-mid">Отримати консультацію</a>
             <p class="hero-full-note">Консультація безкоштовна. Відповім протягом 24 годин.</p>
           </div>
@@ -585,9 +584,6 @@
         <p>Залиште заявку, і я зв'яжусь з вами протягом 24 годин.</p>
         <form class="lead-form" data-lead-form data-source="Форма посередині сайту (після Формати)">
           <div class="lead-form-fields">
-            <div class="field">
-              <input type="text" id="lf-name-mid" name="name" placeholder="Ваше ім'я" required>
-            </div>
             <div class="field">
               <input type="text" id="lf-tg-mid" name="telegram" placeholder="Нік в Telegram" required>
             </div>
@@ -742,9 +738,6 @@
         <form class="lead-form" data-lead-form data-source="Фінальна форма (перед FAQ)">
           <div class="lead-form-fields">
             <div class="field">
-              <input type="text" id="lf-name-2" name="name" placeholder="Ваше ім'я" required>
-            </div>
-            <div class="field">
               <input type="text" id="lf-tg-2" name="telegram" placeholder="Нік в Telegram" required>
             </div>
           </div>
@@ -897,9 +890,6 @@
     <form data-lead-form data-source="Попап: Лендінг">
       <div class="lead-form-fields">
         <div class="field">
-          <input type="text" id="lf-name-m1" name="name" placeholder="Ваше ім'я" required>
-        </div>
-        <div class="field">
           <input type="text" id="lf-tg-m1" name="telegram" placeholder="Нік в Telegram" required>
         </div>
       </div>
@@ -999,9 +989,6 @@
     <form data-lead-form data-source="Попап: Багатосторінковий сайт">
       <div class="lead-form-fields">
         <div class="field">
-          <input type="text" id="lf-name-m2" name="name" placeholder="Ваше ім'я" required>
-        </div>
-        <div class="field">
           <input type="text" id="lf-tg-m2" name="telegram" placeholder="Нік в Telegram" required>
         </div>
       </div>
@@ -1100,9 +1087,6 @@
     <p>Залиште заявку, і я зв'яжусь з вами протягом 24 годин.</p>
     <form data-lead-form data-source="Попап: Інтернет-магазин">
       <div class="lead-form-fields">
-        <div class="field">
-          <input type="text" id="lf-name-m3" name="name" placeholder="Ваше ім'я" required>
-        </div>
         <div class="field">
           <input type="text" id="lf-tg-m3" name="telegram" placeholder="Нік в Telegram" required>
         </div>
@@ -1268,10 +1252,9 @@
     if (!form) return;
     e.preventDefault();
 
-    const name = form.querySelector('[name="name"]').value.trim();
     const tg = form.querySelector('[name="telegram"]').value.trim();
     const source = form.getAttribute('data-source') || 'Сайт web.romaan';
-    const text = `🆕 Нова заявка з сайту\n\nДжерело: ${source}\nІм'я: ${name}\nTelegram: ${tg}`;
+    const text = `🆕 Нова заявка з сайту\n\nДжерело: ${source}\nTelegram: ${tg}`;
 
     const btn = form.querySelector('button[type="submit"]');
     const originalText = btn ? btn.textContent : '';
